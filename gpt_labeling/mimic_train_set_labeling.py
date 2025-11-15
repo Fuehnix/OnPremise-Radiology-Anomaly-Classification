@@ -31,7 +31,7 @@ def json_gpt(input: str):
     completion = openai.ChatCompletion.create(
         model=GPT_MODEL,
         messages=[
-            {"role": "system", "content": "You will be provided with a emr sentecne."},
+            {"role": "system", "content": "You will be provided with a emr sentence."},
             {"role": "user", "content": input},
             ],
         temperature=0.8,
